@@ -58,6 +58,6 @@ int main(int argc, char *argv[])
     start=QTime::currentTime();
     SortAndCount(intList,0,list.size()-1,count);
     end=QTime::currentTime();
-    qDebug()<<count<<"time:"<<start.msecsTo(end)<<"ms";
+    qDebug()<<"the number of inversions is"<<count<<"using time:"<<start.msecsTo(end)<<"ms";
     return 0;
 }
